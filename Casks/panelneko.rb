@@ -16,6 +16,9 @@ cask "panelneko" do
 
   app "panelneko-reader.app"
 
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-cr", "#{appdir}/panelneko-reader.app"], sudo: false
+  end
   zap trash: [
     "~/Library/Application Support/panelneko-reader",
     "~/Library/Preferences/com.wails.panelneko-reader.plist",
