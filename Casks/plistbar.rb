@@ -7,7 +7,7 @@ cask "plistbar" do
   desc "Lightweight launchd manager with memory safety"
   homepage "https://github.com/SakagamiJun/PlistBar"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "PlistBar.app"
 
