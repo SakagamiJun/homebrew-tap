@@ -1,26 +1,26 @@
 class Lnr < Formula
   desc "Modern, high-performance CLI & TUI light novel reader and downloader"
   homepage "https://github.com/SakagamiJun/lnovel_tui"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/SakagamiJun/lnovel_tui/releases/download/v#{version}/lnr-v#{version}-darwin-arm64.tar.gz"
-      sha256 "164781dc5eb8be46174f3bce9611018890be986e7eb149c7d6f1337ba6a3aec9"
+      sha256 "8cb6c8d034c8487869dcaac2f51ccea74e342e51c632e31b94fca5bc7e5c497e"
     else
       url "https://github.com/SakagamiJun/lnovel_tui/releases/download/v#{version}/lnr-v#{version}-darwin-amd64.tar.gz"
-      sha256 "c1ca7f3c6c2f8643f82672de82ede43a3164cde7c4616871f31a3b0414b16fa1"
+      sha256 "6e3f909854f9c11f2ac68df84c305742951e541690ea2752a74c235db75f2b18"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/SakagamiJun/lnovel_tui/releases/download/v#{version}/lnr-v#{version}-linux-arm64.tar.gz"
-      sha256 "e1f06e51ef44777c7ccee46d31d732c1027bfb663d5ce5ef7fedef62077a2e9e"
+      sha256 "10c00e8afdfe8373ee68eef41ca2c396fe73385efb069ecd44527454bebd92ac"
     else
       url "https://github.com/SakagamiJun/lnovel_tui/releases/download/v#{version}/lnr-v#{version}-linux-amd64.tar.gz"
-      sha256 "bd97b01499396d5cf6f192369896e69c3efe1ec0917a6fa4c8e297abe936eaae"
+      sha256 "ce444f94fa63c98b0b09d217708ce3631c13fab89625c95e91ef446089ae14bc"
     end
   end
 
