@@ -1,13 +1,13 @@
 cask "panelneko" do
-  version "0.10.0"
+  version "0.11.0"
 
   on_arm do
-    sha256 "de85f9bda5c8f4b232c42266fbf6b57fab5414af0a37c83f779ed6b356217b31"
+    sha256 "00c10f2025106d628e1c9ef705296bc9b65182ed8aff0a5e8953ba3517e8d5d8"
 
     url "https://github.com/SakagamiJun/panelneko-reader/releases/download/v#{version}/panelneko-reader-macos-arm64.zip"
   end
   on_intel do
-    sha256 "f3add57cd2232b6000625a53f96f649bbf80039ddd79c4217f7d11851ca5d9a1"
+    sha256 "cf743869fa6e05ec01054c81e43edc7610d85abf4fe3a9e22478613ba7fda946"
 
     url "https://github.com/SakagamiJun/panelneko-reader/releases/download/v#{version}/panelneko-reader-macos-amd64.zip"
   end
